@@ -2,13 +2,18 @@ import streamlit as st
 import requests
 import json
 
-st.markdown('''
-<style>
-.stApp [data-testid="stToolbar"]{
-    display:none;
-}
-</style>
-''', unsafe_allow_html=True)
+st.markdown("""
+    <style>
+        .reportview-container {
+            margin-top: -2em;
+        }
+        #MainMenu {visibility: hidden;}
+        .stDeployButton {display:none;}
+        footer {visibility: hidden;}
+        #stDecoration {display:none;}
+    </style>
+""", unsafe_allow_html=True)
+
 # Funciones para cada página
 
 def home_page():
