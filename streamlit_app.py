@@ -5,7 +5,7 @@ import json
 # Funciones para cada página
 
 def home_page():
-    st.title("Página de Inicio")
+    st.title("Legislaciónm guatemalteca")
     st.write("¡Bienvenido a la Página de Inicio!")
 
 def page_one():
