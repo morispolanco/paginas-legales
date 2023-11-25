@@ -2,12 +2,15 @@ import streamlit as st
 import requests
 import json
 
-hide_streamlit_style = """
-            <style>
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+hide_st_style = “”"
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+div.embeddedAppMetaInfoBar_container__DxxL1 {visibility: hidden;}
+
+“”"
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # Funciones para cada página
 
