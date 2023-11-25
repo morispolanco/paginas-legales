@@ -5,8 +5,8 @@ import json
 # Funciones para cada página
 
 def home_page():
-    st.title("Legislaciónm guatemalteca")
-    st.write("¡Bienvenido a la Página de Inicio!")
+    st.title("Legislación guatemalteca")
+    st.write("Bienvenido a las páginas de la legislación guatemalteca. Esta plataforma sirve como una guía completa de las leyes, jurisprudencia y requisitos legales de la República de Guatemala. Ya sea que esté buscando información general o respuestas específicas sobre el panorama jurídico de Guatemala, este sitio tiene como objetivo proporcionar la información necesaria para ayudarle a navegar por la intrincada red de la legislación.")
 
 def page_one():
     st.title("Preguntas sobre las leyes de Guatemala")
