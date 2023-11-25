@@ -9,7 +9,7 @@ def home_page():
     st.write("¡Bienvenido a la Página de Inicio!")
 
 def page_one():
-    st.title("Página 1: Preguntas sobre las leyes de Guatemala")
+    st.title("Preguntas sobre las leyes de Guatemala")
 
     # Código de la API
     def get_api_response(question):
@@ -32,7 +32,7 @@ def page_one():
         st.write(response)
 
 def page_two():
-    st.title("Página 2: Jurisprudencia de Guatemala Q&A")
+    st.title("Jurisprudencia de Guatemala Q&A")
 
     # Configuración de la API
     API_KEY = "260cee54-6d54-48ba-92e8-bf641b5f4805"
@@ -75,7 +75,7 @@ def page_two():
             st.warning("Ingrese una pregunta antes de enviar la solicitud.")
 
 def page_three():
-    st.title('Página 3: Información sobre trámites legales en Guatemala')
+    st.title('Información sobre trámites legales en Guatemala')
 
     # Función para obtener datos de la API
     def get_tramite_info(text):
@@ -104,17 +104,14 @@ def page_three():
 
 # Configuración de la aplicación Streamlit
 
-st.sidebar.title("Menú de Navegación")
-pages = ["Home", "Página 1", "Página 2", "Página 3"]
-selected_page = st.sidebar.selectbox("Selecciona una página", pages)
-
 # Renderizar la página seleccionada
+selected_page = st.sidebar.radio("Selecciona una página", ["Inicio", "Preguntas Legales", "Jurisprudencia", "Trámites Legales"])
 
-if selected_page == "Home":
+if selected_page == "Inicio":
     home_page()
-elif selected_page == "Página 1":
+elif selected_page == "Preguntas Legales":
     page_one()
-elif selected_page == "Página 2":
+elif selected_page == "Jurisprudencia":
     page_two()
-elif selected_page == "Página 3":
+elif selected_page == "Trámites Legales":
     page_three()
