@@ -2,14 +2,13 @@ import streamlit as st
 import requests
 import json
 
-hide_streamlit_style = """
+st.markdown('''
 <style>
-.css-hi6a2p {padding-top: 0rem;}
+.stApp [data-testid="stToolbar"]{
+    display:none;
+}
 </style>
-
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
+''', unsafe_allow_html=True)
 # Funciones para cada página
 
 def home_page():
